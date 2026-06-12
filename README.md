@@ -33,7 +33,7 @@ VU meter — all in the terminal.
 Clone the repo and run the installer:
 
 ```bash
-git clone https://github.com/your-org/aethel-voice-recorder.git
+git clone https://github.com/michaelwolfsdensigma/aethel-voice-recorder.git
 cd aethel-voice-recorder
 chmod +x install.sh
 ./install.sh
