@@ -1,0 +1,9 @@
+.venv/
+.analysis
+__pycache__/
+*.pyc
+*.pyo
+*.prosody.json
+*.timeline.json
+*.reflection.md
+*.baseline.json

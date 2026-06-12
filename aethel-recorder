@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Æthel Voice Recorder — TUI launcher
+set -euo pipefail
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [[ ! -x "$DIR/.venv/bin/python3" ]]; then
+    echo "Run ./install.sh first to set up dependencies."
+    exit 1
+fi
+exec "$DIR/.venv/bin/python3" "$DIR/app.py" "$@"

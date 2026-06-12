@@ -1,0 +1,9 @@
+# Æthel Voice Recorder — full install
+# Recorder TUI + Whisper transcription + prosody/emotion analysis.
+# torch is installed separately by install.sh (GPU vs CPU index URL).
+# Run: ./install.sh (or ./install.sh --cpu to force CPU-only torch)
+-r requirements-lite.txt
+torchaudio>=2.0
+transformers>=4.40
+librosa>=0.10
+scipy>=1.10

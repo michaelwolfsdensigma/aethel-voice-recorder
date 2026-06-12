@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Æthel Voice Recorder — transcription launcher
+# Usage: ./aethel-transcribe <audio> [--model qwen2.5:7b] [--speaker "You"] [--no-draft]
+set -euo pipefail
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [[ ! -x "$DIR/.venv/bin/python3" ]]; then
+    echo "Run ./install.sh first to set up dependencies."
+    exit 1
+fi
+exec "$DIR/.venv/bin/python3" "$DIR/reflect.py" "$@"
